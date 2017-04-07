@@ -1,0 +1,6 @@
+FROM nginx:1.11-alpine
+
+COPY docker/nginx/conf.d /etc/nginx/conf.d
+
+COPY web /srv/mangezbio/web
+EXPOSE 80
