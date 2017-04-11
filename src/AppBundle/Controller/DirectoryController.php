@@ -15,7 +15,7 @@ class DirectoryController extends Controller
     /**
      * @param PlaceCategory $placeCategory
      *
-     * @Route("/annuaire-{slug}/", name="directory-index")
+     * @Route("/annuaire/{slug}/", name="directory-index")
      * @Template()
      *
      * @return array
