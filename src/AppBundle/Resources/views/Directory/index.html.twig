@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Annuaire des {{ category.name }}</h1>
+
+    <ul>
+        {% for department in departments %}
+            <li><a href="">{{ category.name|capitalize }} en {{ department.name }} ({{ department.code }})</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
