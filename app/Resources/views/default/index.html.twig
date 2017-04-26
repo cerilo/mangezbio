@@ -1,9 +1,0 @@
-{% extends 'base.html.twig' %}
-
-{% block body %}
-   <ul>
-      {% for category in categories %}
-         <li><a href="{{ path('directory-index', {'slug': category.slug}) }}" title="Annuaire des restaurants bio">Annuaire des {{ category.name }}</a></li>
-      {% endfor %}
-   </ul>
-{% endblock %}
